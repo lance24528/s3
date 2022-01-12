@@ -10,8 +10,8 @@ using namespace std;
 float invoice(long double amount, float bill) {
 	
 	float change = amount - bill;
-	cout << "\nAmount entered: " << amount << " AED" << endl;
-	cout << "Total Bill: " << bill << " AED" << endl;
+	cout << "\nAmount entered\t: " << amount << " AED" << endl;
+	cout << "Total Bill\t: " << bill << " AED" << endl;
 	
 	return change;
 }
@@ -139,6 +139,6 @@ int main() {
 	}
 	cout << "\nYour order is " << d1.name << d1.type << " - Sugar: " << sucre << endl;
 	int change = invoice(d1.price, aed);
-	cout << "Change: " << change << " AED" << endl;
+	cout << "Change\t\t: " << change << " AED" << endl;
 	return 0;
 }
