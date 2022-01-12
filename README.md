@@ -10,8 +10,8 @@ using namespace std;
 float invoice(long double amount, float bill) {
 	
 	float change = amount - bill;
-	cout << "\nAmount entered: " << amount << endl;
-	cout << "Total Bill: " << bill << endl;
+	cout << "\nAmount entered: " << amount << " AED" << endl;
+	cout << "Total Bill: " << bill << " AED" << endl;
 	
 	return change;
 }
@@ -66,7 +66,7 @@ int main() {
 		coffee_menu[i] = make_pair(coffee_options[i], coffee_prices[i]);
 		tea_menu[i] = make_pair(tea_options[i], tea_prices[i]);
 	}
-	cout << "\t\tWelcome to Lance's Tea and CoffeeShop \n \n";
+	cout << "\t\tWelcome to Lance's Tea and Coffee Shop \n \n";
 	int option;
 
 	cout << "Enter 1 for menu, 2 to exit: ";
@@ -75,7 +75,7 @@ int main() {
 
 		cin.clear();
 		cin.ignore(1000, '\n');
-		cout << "\nInvalid input, enter a valid option (1/2) :\n\n";		
+		cout << "\nInvalid input, enter a valid option (1/2) : ";		
 		cin >> option;
 	}
 	if (option == 2) { cout << "\n\t\t\tThanks for visiting\n" << endl; return 0; }
@@ -139,6 +139,6 @@ int main() {
 	}
 	cout << "\nYour order is " << d1.name << d1.type << " - Sugar: " << sucre << endl;
 	int change = invoice(d1.price, aed);
-	cout << "Change: " << change << endl;
+	cout << "Change: " << change << " AED" << endl;
 	return 0;
 }
